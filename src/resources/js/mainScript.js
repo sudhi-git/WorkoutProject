@@ -32,7 +32,10 @@ var x = setInterval(function(){
     }
     if(exerciseCount == 14){
         clearInterval(x);
-        document.getElementById('done').innerHTML = 'Exercise Set Done. Refresh to start over';
+        workoutVideo = document.getElementById('workoutVideo');
+        workoutVideo.pause();
+        workoutVideo.removeAttribute("src");
+        workoutVideo.load();
     }
 }, 100)
 

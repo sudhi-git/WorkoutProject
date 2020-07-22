@@ -10,22 +10,25 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="header clearfix">
-            <h1 class="text-muted" style="text-align: center">Workout Schedule</h1>
-        </div>
-        <div class="body clearfix">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
                 <p class="content" id="currentWorkout"></p>
                 <p class="content" id="nextWorkout"></p>
+            </div>
+            <div class="col-md-4">
                 <p class="content" id="countdown"></p>
                 <p class="content" id="restTime"></p>
-                <p class="content" id="done"></p>
-                <video width="1080" height="600" controls id="workoutVideo" autoplay muted loop>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"> 
+                <video class="video-content" width="720" height="600" controls id="workoutVideo" autoplay muted loop>
                     <source src="JumpingJacks.mp4" type="video/mp4">
                 </video>
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>

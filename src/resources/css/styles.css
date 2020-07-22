@@ -1,7 +1,13 @@
 .content
 {
     color: brown;
-    font-size: 20pt;
+    font-size: 55pt;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
+}
+.video-content
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block
 }
